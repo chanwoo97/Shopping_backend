@@ -14,13 +14,15 @@ public class Member {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long userId;
 
     @Column(unique = true, nullable = false)
-    private String memberId; // 로그인용 아이디
+    private String username; // 로그인용 아이디
     private String password;
-    private String userName;
+    private String name;
     private String email;
-    private String role; // ROLE_USER, ROLE_ADMIN 등
+    private String phone;
+    private String address;
     private LocalDateTime createdAt;
+    private String role; // ROLE_USER, ROLE_ADMIN 등
 }
