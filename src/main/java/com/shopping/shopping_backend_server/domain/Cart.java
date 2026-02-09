@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@Table(name = "shopping_cart")
+@Table(name = "cart")
 public class Cart {
 
     @Id
