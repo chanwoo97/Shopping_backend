@@ -1,8 +1,9 @@
 package com.shopping.shopping_backend_server.service;
 
 import com.shopping.shopping_backend_server.dto.OrderRequestDTO;
+import com.shopping.shopping_backend_server.dto.OrderResponseDTO;
 
 public interface OrderService {
 
-    Long order(OrderRequestDTO dto);
+    OrderResponseDTO order(OrderRequestDTO dto);
 }
