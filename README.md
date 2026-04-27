@@ -1,10 +1,9 @@
 "# Shopping_backend" 
+
 ## 📊 데이터베이스 설계 (ERD)
 
 ```mermaid
 erDiagram
-    MEMBER ||--o{ ORDER : "places"
-    %% (erDiagram
     MEMBER ||--o{ ORDER : "places"
     MEMBER ||--o{ REVIEW : "writes"
     MEMBER ||--o{ ADDRESS : "has"
@@ -86,7 +85,7 @@ erDiagram
         String address
         String addressDetail
         String zipCode
-    })
+    }
 
 usecaseDiagram
     actor "User" as U
@@ -118,5 +117,4 @@ usecaseDiagram
     A --> UC9
     A --> UC10
     
-    %% Admin inherits User actions
     A --|> U
